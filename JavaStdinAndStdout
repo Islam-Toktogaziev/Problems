@@ -1,0 +1,14 @@
+JavaStdinAndStdout
+import java.util.Scanner;
+public class Main{
+	public static void main(String[] args){
+	Scanner scanner = new Scanner(System.in);
+	int intNum = scanner.nextInt();
+	double floatNum = scanner.nextDouble();
+	String text = scanner.nextLine();
+
+	System.out.println("String: " + text);
+	System.out.println("Double: " + floatNum);
+    System.out.println("Int: " + intNum);
+	}
+}
