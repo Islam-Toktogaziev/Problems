@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class Main{
+    private static int breadth;
+    private static int height;
+	public static void main(String() args){
+	Scanner scanner = new Scanner(System.in);
+	breadth = scanner.nextInt();
+	height = scanner.nextInt();
+	try{
+	if(breadth <= 0 || height <= 0 || breadth <= 0 && height <= 0)
+	    throw new java.lang.Exception("java.lang.Exception: Breadth and height must be positive");
+	} catch(java.lang.Exception e)
+	System.out.println(e);
+	}
+}
