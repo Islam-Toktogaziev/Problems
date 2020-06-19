@@ -1,13 +1,14 @@
 import java.util.Scanner;
 public class Main{
-	public static void main(String[] args){
-	Scanner scanner = new Scanner(System.in);
-	int intNum = scanner.nextInt();
-	double floatNum = scanner.nextDouble();
-	String text = scanner.nextLine();
+    public static void main(String[] args){
+        Scanner scanner = new Scanner(System.in);
+        int intNum = scanner.nextInt();
+        double floatNum = scanner.nextDouble();
+        scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
+        String text = scanner.nextLine();
 
-	System.out.println("String: " + text);
-	System.out.println("Double: " + floatNum);
+        System.out.println("String: " + text);
+        System.out.println("Double: " + floatNum);
         System.out.println("Int: " + intNum);
-	}
+    }
 }
